@@ -1,0 +1,13 @@
+﻿body{
+	height: 		280px;
+	width:		200px;
+}
+
+input, select{
+	width:			180px;
+	margin-bottom:	5px;
+}
+
+.small{
+	font-size:		8px;
+}

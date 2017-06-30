@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>NetUsage</title>
+	<link type='text/css' rel='Stylesheet' href='css/style.css' />
+	<script type="text/javascript" src="scripts/scriptlibrary.js"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript" src="scripts/UsageCalculator.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/Isp.js"></script>
+	<script type="text/javascript" src="scripts/Config.js"></script>
+	<script type="text/javascript" src="scripts/Internode.js"></script>
+	
+	<script type="text/javascript">
+		window.attachEvent( "onload", window_OnLoad );
+		document.attachEvent( "onclick", window_OnClick );
+	</script>
+</head>
+<body>
+    <g:background id="backgroundImage" src="images/bg01.png" style="position: absolute; top: 0px; left: 0px; z-index: 0" />
+    <div><a id="serviceName" href="#" title="Pending initial update">Service Name</a></div>
+    <img id="meterBack" src="images/bargray.png" onmouseover="document.body.style.cursor = 'hand'" onmouseout="document.body.style.cursor = 'default'"/>
+    <img id="usageMeter" src="images/bargray.png" onmouseover="document.body.style.cursor = 'hand'" onmouseout="document.body.style.cursor = 'default'"/>
+    <img id="dateMarker" src="images/arrow.png" />
+    <div id="updateLink"><a href="http://conryclan.com/projects/NetUsage/NetUsage.gadget" title="Upgrade to new version"><img id="newVersion" src="images/download.png" /></a></div>
+</body>
+</html>

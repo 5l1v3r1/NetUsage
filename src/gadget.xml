@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gadget>
+  <name>NetUsage</name>
+  <namespace>ConryClan.NetUsage</namespace>
+  <version>2.3.0.0</version>
+  <author name="ConryClan">
+    <info url="http://ConryClan.com/" text="ConryClan.com"/>
+    <logo src="logo.png"/>
+  </author>
+  <copyright>© 2009</copyright>
+  <description>Monitor your internet quota usage with Internode</description>
+  <icons>
+    <icon src="icon.png"/>
+  </icons>
+  <hosts>
+    <host name="sidebar">
+      <base type="HTML" apiVersion="1.0" src="NetUsage.html"/>
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0"/>
+      <defaultImage src="icon.png"/>
+    </host>
+  </hosts>
+</gadget>

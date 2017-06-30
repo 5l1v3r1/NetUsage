@@ -1,0 +1,50 @@
+body{
+    font-family: 			Segoe UI, Tahoma, Sans-Serif;
+    cursor: 				default;
+    width: 					450px;
+    height: 				650px;
+    font-size: 			11px;
+    margin: 				10px;
+    background-color:	#CCCCCC;
+}
+
+table{
+	padding:					0px;
+	margin:					0px;
+
+}
+
+td{
+	font-family: 			Segoe UI, Tahoma, Sans-Serif;
+   font-size: 				11px;
+}
+
+.chart{
+	width:	400;	
+	height:	200;
+	display:	none;
+}
+
+.right
+{
+	text-align:				right;
+}
+
+.small{
+	font-size:				0.7em;
+}
+
+.hidden{
+	display:		none;
+}
+
+.jsLink{
+	font-size: 	11px;
+	text-decoration:	none;
+}
+
+.chartLoader{
+	width:	400;	
+	height:	200;
+	background: url("../images/ajax-loader_big.gif") no-repeat center center;
+}

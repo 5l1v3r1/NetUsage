@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>NetUsage History</title>
+	<link type='text/css' rel='Stylesheet' href='css/flyout.css' />
+	<script type="text/javascript" src="scripts/scriptlibrary.js"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript" src="scripts/UsageCalculator.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/Isp.js"></script>
+	<script type="text/javascript" src="scripts/Config.js"></script>
+	<script type="text/javascript" src="scripts/Internode.js"></script>
+	<script type="text/javascript" src="scripts/flyout.js"></script>
+	
+	<script type="text/javascript">
+		window.attachEvent( "onload", window_OnLoad );
+	</script>
+</head>
+<body>
+	<b>Current status</b><br />
+	<table>
+		<tr>
+			<td>Quota used:</td><td><span id="txtPctQuota">...</span>%&nbsp;(<span id="txtRemaining">...</span><span class="small">GB</span> of <span id="txtQuota">...</span><span class="small">GB</span>&nbsp;remaining)</td>
+		</tr><tr>
+			<td>Rollover:</td><td><span id="rollover">...</span>&nbsp;(<span id="txtDaysLeft">...</span> days left)</td>
+		</tr><tr>
+			<td>Average used:</td><td><span id="avgUsed">...</span><span class="small">MB</span>&nbsp;per day</td>
+		</tr><tr>
+			<td>Average remaining:</td><td><span id="avgRemaining">...</span><span class="small">MB</span>&nbsp;per day</td>
+		</tr>
+	</table>
+	<a href="javascript:toggleMoreInfo()" id="moreInfoLink" class="jsLink">more...</a>
+	<div id="moreInfo" class="hidden">
+		<table>
+			<tr>
+				<td>Service Id:</td><td><span id="id">...</span></td>
+			</tr><tr>
+				<td>Username:</td><td><span id="username">...</span></td>
+			</tr><tr>
+				<td>Plan:</td><td><span id="plan">...</span></td>
+			</tr><tr>
+				<td>Plan interval:</td><td><span id="plan-interval"></span></td>
+			</tr><tr>
+				<td>Plan cost:</td><td>$<span id="plan-cost">...</span></td>
+			</tr><tr>
+				<td>Carrier:</td><td><span id="carrier">...</span></td>
+			</tr><tr>
+				<td>Speed:</td><td><span id="speed">...</span></td>
+			</tr><tr>
+				<td>Usage rating:</td><td><span id="usage-rating">...</span></td>
+			</tr><tr>
+				<td>Excess cost:</td><td>$<span id="excess-cost">...</span>/MB</td>
+			</tr><tr>
+				<td>Excess charged:</td><td><span id="excess-charged">...</span></td>
+			</tr><tr>
+				<td>Excess shaped:</td><td><span id="excess-shaped">...</span></td>
+			</tr><tr>
+				<td>Excess restrict access:</td><td><span id="excess-restrict-access">...</span></td>
+			</tr>
+		</table>
+	</div>
+	<p />
+	<b>Daily usage over the last 30 days.</b><br />
+   <div id="chartLast30" class="chartLoader"></div>
+   
+   <br />
+   <br />
+   <b>Monthly usage for the past 12 months.</b><br />
+   <div id="chartMonth12" class="chartLoader"></div>
+	<br /><br />
+   <p class="right">
+		Version: <span id="version"></span>
+	</p>
+</body>
+</html>
