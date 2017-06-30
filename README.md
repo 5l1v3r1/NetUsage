@@ -9,3 +9,6 @@ Origionally developed for Internode, support for other ISPs can be easily added.
 
 # Maintenance
 I am no longer with Internode, nor do I have a Windows 7 computer.  As such I'm not actively maintaining this project.  Feel free to fork and submit pull requests.
+
+# Building
+In order to build the gadget, simply zip the contents of the src folder (not the src folder itself), and rename the zip file NetUsage.gadget.  That's all there is too it.
